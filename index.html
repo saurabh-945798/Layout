@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+        integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+        integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>NEXUS</title>
+</head>
+
+<body>
+    <main>
+        <!-- <nav>
+            <div class="container container-md">
+                <a href="index.html" class="logo"><img src="https://cdn.dribbble.com/userupload/7937178/file/original-8e825da58357f70b3d8c57ab9ddb81c3.jpg?resize=400x0" alt=""></a>
+            </div>
+        </nav> -->
+        <section class="cover">
+            <div class="container">
+                <div class="intro">
+                    <div class="gradient-heading wow animate__animated animate__fadeInUp">WELCOME TO NEXUS</div>
+                    <div class="circle-images">
+                        <div class="circle-image">
+                            <img src="https://wallpapers.com/images/hd/hd-dota-2-gaming-cover-hovjsab9cbm24bid.webp" alt="">
+                        </div>
+                        <div class="circle-image">
+                            <img src="https://wallpapers.com/images/hd/suraya-hawthorne-hd-destiny-2-5toruuye5qjxvfk7.webp" alt="">
+                        </div>
+                        <div class="circle-image">
+                            <i class="ri-folder-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro">
+                    <div class="heading wow animate__animated animate__fadeInUp">TECH-FEST</div>
+                </div>
+                <div class="intro-detail wow animate__animated animate__fadeInUp">
+                    <p class="qqq">About The Tech Fest
+                        Tech Fest is not just an event; it's an immersive journey into the realms of science, engineering, and innovation. Organized by Droid Club, our tech fest aims to foster a culture of innovation, collaboration, and learning among students, professionals, and tech enthusiasts alike..</p>
+                  
+                </div>
+                <div class="intro-footer">
+                    <div class="intro-footer-top">
+                        <a href="#" class="btn btn-dark">Get Started <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="#" class="btn btn-yellow show-mobile">Download on IOS <i class="ri-apple-fill"></i></a>
+                    </div>
+                    <div class="share">
+                        <a href="#" class="btn-circle btn-dark"><i class="ri-discord-fill"></i></a>
+                        <a href="#" class="btn-circle btn-dark"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="btn-circle btn-dark"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+                
+                <div class="cover-image">
+                    <img src="https://wallpapers.com/images/hd/suraya-hawthorne-hd-destiny-2-5toruuye5qjxvfk7.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <p class="wow animate__animated animate__fadeInUp">3,500+ leading firms Are Sponsouring Us</p>
+                <div class="courses  wow animate__animated animate__fadeInUp">
+                    <div class="course">
+                        <img src="https://i.pinimg.com/736x/47/b7/bd/47b7bdac4285ee24654ca7d68cf06351.jpg" alt="">
+                    </div>
+                    <div class="course">
+                        <img src="https://www.insight.com/content/dam/insight-web/en_US/thumbnail/insight-thumbnail.png" alt="">
+                    </div>
+                    <div class="course">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWCZER?ver=1433&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true" alt="">
+                    </div>
+                    <div class="course">
+                        <img src="data:image/png;base64,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" alt="">
+                    </div>
+                    <div class="course">
+                        <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg" alt="">
+                    </div>
+                    <div class="course">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo.png" alt="">
+                    </div>
+                    <div class="course">
+                        <img src="https://cdn5.vectorstock.com/i/1000x1000/53/39/lenovo-logo-brand-phone-symbol-name-white-design-vector-46215339.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="section-heading wow animate__animated animate__fadeInUp">
+                            What Makes Us Different
+                        </div>
+                        <span>About The Tech Fest
+                            Tech Fest is not just an event; it's an immersive journey into the realms of science, engineering, and innovation. Organized by Droid Club, our tech fest aims to foster a culture of innovation, collaboration, and learning among students, professionals, and tech enthusiasts alike.
+                            .</span>
+                        <br>
+                        <a href="#" class="btn btn-dark">See More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border wow animate__animated animate__fadeInUp">
+                            <span class="index txt-purple">01.</span>
+                            <div class="border"></div>
+                            <p class="www">Competitions:</p>
+                            <span>Put your skills to the test in exhilarating competitions covering a wide array of domains, including robotics, coding, hackathons, and more. .</span>
+                        </div>
+                        <div class="card-border wow animate__animated animate__fadeInUp">
+                            <span class="index txt-blue">03.</span>
+                            <div class="border">
+                               </div>
+                            <p> Workshops and Talks: </p>
+                            <span> Delvelop deep into the latest trends and developments in technology through insightful workshops and engaging talks by industry experts.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-border wow animate__animated animate__fadeInUp">
+                            <span class="index txt-green">02.</span>
+                            <div class="border"></div>
+                            <p>Exhibitions: </p>
+                            <span>Immerse yourself in a world of innovation at our tech exhibitions, where groundbreaking projects, prototypes, and inventions take center stage. 
+                                .</span>
+                        </div>
+                        <div class="card-border wow animate__animated animate__fadeInUp">
+                            <span class="index txt-yellow">04.</span>
+                            <div class="border"></div>
+                            <p>Fun and Entertainment:</p>
+                            <span>Unwind and enjoy the festivities with a mix of entertainment options, including live performances, gaming zones, and interactive installations..</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    
+        <section class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="feature-card wow animate__animated animate__fadeInUp">
+                            <div class="feature-card-icon">
+                                <i class="ri-bar-chart-fill"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <p>Artificial Intelligence and Machine Learning</p>
+                                <span>Ceipal's Al-powered ATS automatically delivers high-
+                                    quality talent to your dashboard while integrating.</span>
+                            </div>
+                        </div>
+                        <div class="feature-card wow animate__animated animate__fadeInUp">
+                            <div class="feature-card-icon">
+                                <i class="ri-shape-fill"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <p>Internet of Things (IoT) and Smart Devices</p>
+                                <span>Ceipal Procurewise is a flexible, powerful, and user-
+                                    friendly vendor management system.</span>
+                            </div>
+                        </div>
+                        <div class="feature-card wow animate__animated animate__fadeInUp">
+                            <div class="feature-card-icon">
+                                <i class="ri-user-5-fill"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <p>Robotics and Automation</p>
+                                <span>Ceipal's Workforce Management helps organizations
+                                    effectively oversee talent.</span>
+                            </div>
+                        </div>
+                        <div class="feature-card wow animate__animated animate__fadeInUp">
+                            <div class="feature-card-icon">
+                                <i class="ri-table-alt-fill"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <p>Augmented Reality (AR) and Virtual Reality (VR)</p>
+                                <span>Ceipal's diversity hiring product uses our advanced Al
+                                    capabilities to assess, plan.</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="col-md-6">
+                        <div class="section-heading"> Diverse Domains</div>
+                        <span>Our exhibitions cover a wide range of tech domains, including but not limited to:.</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDReq1kVAdPdo6mFGnPg3yPJDI9Y-MuQcwDnTKoMxLvIsn5Kpv9Z72EQA8Atr0-sLxaHA&usqp=CAU" class="wow animate__animated animate__fadeInUp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="reports">
+            <div class="container">
+                <p>OUR LOVING SPONSOR'S</p>
+                <div class="section-heading">Analyst Reports About Ceipal</div>
+                <div class="row swiper reports-swiper">
+                    <div class="col-12 swiper-wrapper wow animate__animated animate__fadeInUp">
+                        <div class="swiper-slide">
+                            <div class="report-card">
+                                <img src="https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo.png" alt="">
+                                <span class="papa">Reducing Tech Stacks and
+                                    Improving Outcomes with Holistic
+                                    Talent Acquisition Solutions.</span>
+                                <a href="#"> Learn More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="report-card">
+                                <img src="https://variety.com/wp-content/uploads/2017/12/hotstar.jpg" alt="">
+                                <span>Ceipal addresses market need,
+                                    opens new competitive vector
+                                    with automation bundle.</span>
+                                <a href="#"> Learn More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="report-card">
+                                <img src="https://logohistory.net/wp-content/uploads/2023/05/Netflix-Logo.png" alt="">
+                                <span>Procurewise Vendor Analysis:
+                                    Solution Overview, Roadmap,
+                                    Competitors & Market.</span>
+                                <a href="#"> Learn More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="report-card">
+                                <img src="https://www.shutterstock.com/image-vector/microsoft-logo-icon-png-isolated-260nw-2306949595.jpg" alt="">
+                                <span>Reducing Tech Stacks and
+                                    Improving Outcomes with Holistic
+                                    Talent Acquisition Solutions.</span>
+                                <a href="#"> Learn More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="report-card">
+                                <img src="https://i.pinimg.com/736x/47/b7/bd/47b7bdac4285ee24654ca7d68cf06351.jpg" alt="">
+                                <span>Ceipal addresses market need,
+                                    opens new competitive vector
+                                    with automation bundle.</span>
+                                <a href="#"> Learn More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="report-card">
+                                <img src="https://www.insight.com/content/dam/insight-web/en_US/thumbnail/insight-thumbnail.png" alt="">
+                                <span>Procurewise Vendor Analysis:
+                                    Solution Overview, Roadmap,
+                                    Competitors & Market.</span>
+                                <a href="#"> Learn More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+<baba>
+    <div class="containerr">
+        <div class="panel active" style="background-image: url(https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/01/30125224/27021837_10155222741492592_934655472329493290_o.jpg);">
+            <h1>OUR EVENTS</h1>
+        </div>
+        <div class="panel" style="background-image: url(https://m.media-amazon.com/images/I/811DMknWZuL._AC_UF894,1000_QL80_.jpg);">
+            <h1>OUR EVENTS</h1>
+        </div>
+        <div class="panel" style="background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/1121be182368911.Y3JvcCwzNDUwLDI2OTksMjA0LDA.jpg);">
+            <h1>OUR EVENTS</h1>
+        </div>
+        <div class="panel" style="background-image: url(https://images.unsplash.com/photo-1664151268423-a11a2757f0f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+            <h1>OUR EVENTS</h1>
+        </div>
+        <div class="panel" style="background-image: url(https://plus.unsplash.com/premium_photo-1687572821942-d6f30f6b125d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+            <h1>OUR EVENTS</h1>
+        </div>
+    </div>
+
+   
+</baba>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    <div class="loading-page">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+            <path
+                d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
+        </svg>
+
+
+        <div class="name-container">
+            <div class="logo-name">NEXUS</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+        integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script>
+        var clientsSwiper = new Swiper(".clients-swiper", {
+
+            slidesPerView: 1,
+            pagination: {
+                el: ".clients-swiper .swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        var reportsSwiper = new Swiper(".reports-swiper", {
+
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+                992: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+
+        new WOW().init();
+    </script>
+</body>
+
+</html>
