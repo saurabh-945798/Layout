@@ -194,14 +194,18 @@ section.cover {
   font-weight: 1000;
   /* background: linear-gradient(to right, #B545C9, #FEB143 68%); */
   /* -webkit-background-clip: text; */
- 
   color: #fff;
+  right: 5%;
+  position: relative;
+  
 }
 
 .heading {
   font-size: 8rem;
   font-weight: 1000;
   color: #fff;
+  position: relative;
+  right: 3%;
 }
 
 .circle-images {
@@ -239,11 +243,12 @@ section.cover {
     font-size: 1.8rem;
     width: 40%;
     min-width: 40rem;
-    margin-block: 2rem;
+    margin-block: 1rem;
     color: #323234;
     position: relative;
     line-height: 1.5;
     color: #fff;
+    left: 0%;
 }
 
 .intro-detail .btn-circle{
@@ -314,6 +319,8 @@ section.cover {
 
 
 
+
+
 .courses{
     width: 100%;
     display: flex;
@@ -347,6 +354,7 @@ section.cover {
     z-index: 2;
     color: #fff;
     background-color: #000;
+    width: 50%;
 }
 
 
@@ -430,6 +438,29 @@ section.cover {
     margin-top: 1rem;
 }
 
+
+/* video ka code */
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+#page1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page1>h1{
+    font-size: 4vw;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
 
 
 
@@ -806,6 +837,15 @@ header .menu{
 
 
 
+
+/* marques ka code */
+
+
+
+
+
+
+
 /* FOTTER KA CODE */
 
 
@@ -894,6 +934,74 @@ footer .col-md-3 span, footer .col-md-3 a{
 .copyright .container a{
     font-size: 2rem;
 }
+
+
+
+
+#page19{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background-color: #000;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5vw;
+}
+#page19>h5{
+    width: 35%;
+}
+#page20{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page20>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page20{
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    bottom: 18%;
+    right: 5%;
+    color: #fff;
+}
+#center-page20>h1{
+    margin-bottom: 1.7vw;
+}
+
+
+@media (min-width:320px) and (max-width:479px){
+    #page19>h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    #page19>h5{
+        font-size: 12px;
+        text-align: center;
+        width: 35%;
+    } 
+
+}
+
+
+
+
+
+
+
+
+
+
   
   
   
@@ -1053,6 +1161,11 @@ footer .col-md-3 span, footer .col-md-3 a{
     .feature-card{
         height: 14rem;
     }
+
+    .section-heading{
+        width: 100%;
+    }
+
 }
 
 
@@ -1091,6 +1204,11 @@ footer .col-md-3 span, footer .col-md-3 a{
         padding: 0 2rem;
         height: 17rem;
     }
+    .section-heading{
+        width: 100%;
+    }
+
+
 
 
     
@@ -1130,6 +1248,258 @@ footer .col-md-3 span, footer .col-md-3 a{
         height: 18rem;
     }
 
+    .section-heading{
+        width: 100%;
+    }
+
+
 
     
 }
+
+
+/* cards ka code */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.card:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+}
+
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.details .rating {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    gap: .25em;
+}
+
+.details .rating i {
+    color: #e3c414;
+}
+
+.details .rating span {
+    margin-left: 0.25em;
+}
+
+.details .tags {
+    display: flex;
+    gap: .375em;
+    margin-bottom: .875em;
+    font-size: .85em;
+}
+
+.details .tags span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+}
+
+.details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.details .cast h3 {
+    margin-bottom: .5em;
+}
+
+.details .cast ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.details .cast ul li {
+    list-style: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid #fff;
+}
+
+.details .cast ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* marque ko effect */
+
+
+/* a {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #000;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .marquee {
+    width: 100%;
+    padding: 90px 20px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .marquee h3 {
+    font-size: 94px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .marquee .marquee-wrapper {
+    width: 100000px;
+    animation: marqueeAnimation 21s linear 0s infinite running;
+  }
+
+  .marquee h3 .marquee-title {
+    margin-right: 20px;
+    float: left;
+    color: #fff;
+  }
+
+  .text-stroke-black {
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  @keyframes marqueeAnimation {
+    100% {
+      transform: translateX(-4600px);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .marquee h3 {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 549px) {
+    .marquee h3 {
+      font-size: 50px;
+    }
+  }
+
